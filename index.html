@@ -20,7 +20,6 @@
 
         <div class="rodape">
           <button onclick="aparecerFormulario()">Comprar Agora</button>
-          <button class="test-drive">Faça um teste drive</button>
           <p class="text-rodape">Não garantimos seu veiculo imediatamente</p>
         </div>
       </li>
@@ -44,12 +43,30 @@
       </li>
     </ul>
 
-    <div class="formulario">
-      <button onclick="desaparecerFormulario()">Fechar</button>
-      <script
-        type="text/javascript"
-        src="https://form.jotform.com/jsform/241927329587066"
-      ></script>
+    <div class="formulario" id="formulario">
+      <button class="fechar" onclick="desaparecerFormulario()">✖</button>
+      <h2>Compre seu Tesla</h2>
+      <form autocomplete="off">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          autocomplete="off"
+        />
+        <label for="modelo">Modelo:</label>
+        <select id="modelo" name="modelo">
+          <option value="model-y">Model Y</option>
+          <option value="model-3">Model 3</option>
+          <option value="model-x">Model X</option>
+        </select>
+
+        <button type="submit" class="enviar">Enviar</button>
+      </form>
     </div>
   </body>
   <script src="scripts.js"></script>

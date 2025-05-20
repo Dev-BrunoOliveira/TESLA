@@ -1,14 +1,8 @@
-let formulario = document.querySelector(".formulario")
-
 function aparecerFormulario() {
-    
-    const formulario = document.querySelector('.formulario');
-    formulario.style.display = 'block';
+  document.querySelector(".formulario").style.display = "block";
 }
 
 function desaparecerFormulario() {
-    
-    const formulario = document.querySelector('.formulario');
-    formulario.style.display = 'none';
+  document.querySelector(".formulario").style.display = "none";
 }
 
